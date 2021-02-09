@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/locButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:srcCompat="@drawable/gps_drawable" />
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/textLocation"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="위치"
+            android:textSize="45px"/>
+        <ImageButton
+            android:id="@+id/carTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@android:drawable/ic_lock_idle_alarm" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="436dp" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="검색하기"/>
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="재활용"/>
+
+</LinearLayout>
